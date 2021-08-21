@@ -8,7 +8,6 @@
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="/style/style.css">
 
-    <script src="/js/conversion.js"></script>
     <title>Homework 3</title>
 <!-- Functions Javascript -->
     <script src="/conversion.js"></script>
@@ -24,15 +23,15 @@
         <!-- start Selects Temperature Scales -->
         <div class="selects">
         <select class="fromNumber" id="from" onchange="select()">
-            <option value="Cel">Celcius</option>
-            <option value="Fah">Fahrenheit</option>
-            <option value="Kel">Kelvin</option>
+            <option value="Cel" id="celcius-in">Celcius</option>
+            <option value="Fah" id="fahrenheit-in">Fahrenheit</option>
+            <option value="Kel" id="kelvin-in">Kelvin</option>
         </select>
         <p> to </p>
         <select class="toResult" id="to" onchange="select()">
-            <option value="Cel">Celcius</option>
-            <option value="Fah">Fahrenheit</option>
-            <option value="Kel">Kelvin</option>
+            <option value="Cel" id="celcius-out">Celcius</option>
+            <option value="Fah" id="fahrenheit-out">Fahrenheit</option>
+            <option value="Kel" id="kelvin-out">Kelvin</option>
         </select>
         </div>
         <!-- end Selects Temperature Scales -->
