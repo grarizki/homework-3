@@ -10,8 +10,11 @@
 
     <script src="/js/conversion.js"></script>
     <title>Homework 3</title>
+<!-- Functions Javascript -->
+    <script src="/conversion.js"></script>
+    <script src="/cgbg.js"></script>
 </head>
-<body>
+<body style="background-color : gray">
     <main>
         <!-- Header Title -->
         <header>
@@ -21,13 +24,13 @@
         <!-- start Selects Temperature Scales -->
         <div class="selects">
         <select class="temp-init">
-            <option value="Celcius">Celcius</option>
+            <option value="Celcius" id="celcius">Celcius</option>
             <option value="Fahrenheit">Fahrenheit</option>
             <option value="Kelvin">Kelvin</option>
         </select>
         <p> to </p>
         <select class="temp-res">
-            <option value="Celcius">Celcius</option>
+            <option value="Celcius" id="celcius">Celcius</option>
             <option value="Fahrenheit">Fahrenheit</option>
             <option value="Kelvin">Kelvin</option>
         </select>
@@ -37,18 +40,17 @@
         <!-- start Input for number and result -->
         <div class="inputs">
         <input type="number" name="initial temp" id="temp-input" class="input" placeholder="insert number here">
-        <input type="number" name="result temp" id="res-input" class="input" placeholder="result is here">
+        <input type="number" name="result temp" id="res-output" class="input" placeholder="result is here">
         </div>
         <!-- end Input for number and result -->
 
         <!-- start change background color -->
-        <div class="changes">
-        <input type="number" name="result temp" id="res-input" class="input-bg" placeholder="Change Background">
-        <button type="submit" class="btn-ch">Change</button>
+        <div onchange="color(this.value)" class="changes">
+        <input type="text" name="result temp" id="color" class="btn input-bg" placeholder="Change Background">
+        <button type="button" class="btn" onclick="changeBackground()">Change</button>
         </div>
         <!-- end change background color -->
     </main>
-    <script src="/js/conversion.js"></script>
 </div>
 </body>
 </html>
