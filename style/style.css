@@ -27,3 +27,81 @@ h1 {
     color: #ffffff;
 }
 
+.selects {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    max-width: 768px;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.temp-init {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.temp-res {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 768px;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.input {
+    flex: 1 1 40%;
+    margin: 15px;
+    appearance: none;
+    background: none;
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    max-width: 100%;
+}
+
+.changes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.input-bg {
+    flex: 1 1 40%;
+    margin: 15px;
+    appearance: none;
+    background: none;
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    max-width: 100%;
+}
+
