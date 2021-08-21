@@ -13,23 +13,30 @@
 </head>
 <body>
     <main>
+        <!-- Header Title -->
         <header>
             <h1 class="title">Temperature Converter</h1>
         </header>
+
+        <!-- Selects Temperature Scales -->
+
         <select id="temp-init">
             <option value="Celcius">Celcius</option>
             <option value="Fahrenheit">Fahrenheit</option>
             <option value="Kelvin">Kelvin</option>
         </select>
-
         <select id="temp-res">
             <option value="Celcius">Celcius</option>
             <option value="Fahrenheit">Fahrenheit</option>
             <option value="Kelvin">Kelvin</option>
         </select>
 
+        <!-- Input for number and result -->
+
+        <div class="inputs">
         <input type="number" name="initial temp" id="temp-input" class="input" placeholder="insert number here">
         <input type="number" name="result temp" id="res-input" class="input" placeholder="result is here">
+        </div>
     </main>
     <script src="/js/conversion.js"></script>
 </div>
