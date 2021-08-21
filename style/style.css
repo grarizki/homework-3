@@ -33,7 +33,7 @@ h1 {
     max-width: 500px;
 }
 
-.temp-init {
+.fromNumber {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -48,7 +48,7 @@ p {
     margin: 0 auto;
 }
 
-.temp-res {
+.toResult {
     display: flex;
     flex-direction: row;
     justify-content: center;
