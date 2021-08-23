@@ -1,9 +1,10 @@
-{
+{ "name": "homework-3",
+  "description": "Making temperature converter with background color changer",
+  "main": "Conversion.js",
   "scripts": {
     "test": "jest"
   },
   "devDependencies": {
     "jest": "^27.0.6"
   }
-  
 }
