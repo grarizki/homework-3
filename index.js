@@ -1,5 +1,3 @@
-const Conversion = require("./conversion");
-
 function changeBackground() {
     document.body.style.backgroundColor = document.getElementById("color").value;
 }
