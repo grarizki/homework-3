@@ -50,4 +50,4 @@ class Conversion {
 }
 
 
-modules.exports = Conversion;
+module.exports = Conversion;
