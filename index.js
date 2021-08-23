@@ -1,3 +1,5 @@
+const Conversion = require("./conversion");
+
 function changeBackground() {
     document.body.style.backgroundColor = document.getElementById("color").value;
 }
@@ -10,7 +12,8 @@ const select = () => {
 //     $(".selects").val() = "";
 //     $(".selects").val() = "";
 // }
-const conv = () => {
+var conv = new Conversion();
+const Convertion = () => {
     if (document.getElementById("from").value == "Cel") {
         const res = conv.fromCelcius(
             document.getElementById("to").value,
