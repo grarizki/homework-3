@@ -10,11 +10,11 @@ class Conversion {
         } 
         // Converting Celcius to Fahrenheit
         if (to == "Fah") {
-            return ( 9 / 5 ) * (temp_input + 32);
+            return  (9 / 5) * temp_input + 32;
         }
         // Converting Celcius to Reamur
         if (to == "Rea") {
-            return ( 4 / 5 ) * (temp_input +32);
+            return  (4 / 5) * temp_input;
         }
     }
     
@@ -25,11 +25,11 @@ class Conversion {
         }
         // Converting Fahrenheit to Celcius
         if (to == "Cel") {
-            return ( 5 / 9 ) * (temp_input + 32);
+            return  (5 / 9) * (temp_input - 32);
         }
         // Converting Fahrenheit to Reamur
         if (to == "Rea") {
-            return ( 4 / 9 ) * (temp_input - 32);
+            return  (4 / 9) * (temp_input - 32);
         }
     }
     fromReamur(to, temp_input){
@@ -40,15 +40,14 @@ class Conversion {
         }
         // Converting Reamur to Celcius
         if (to == "Cel") {
-            return ( 5 / 4 ) * (temp_input);
+            return  (5 / 4) * temp_input;
         }
         // Converting Reamur to Fahrenheit
         if (to == "Fah") {
-            return ( 9 / 4 ) * (temp_input);
+            return  (9 / 4) * temp_input + 32;
         }
     }
 }
-module.exports = Conversion;
 
 
 modules.exports = Conversion;
