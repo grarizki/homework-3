@@ -1,6 +1,7 @@
 // Setup Conversion
-function Conversion () {
-    fromCelcius(to, temp-input){
+class Conversion { constructor() {
+    constructor()
+    fromCelcius(to, temp-input);{
         // Converting Celcius to Celcius
         if (to == "Cel") {
             return temp-input;
@@ -15,7 +16,7 @@ function Conversion () {
         }
     }
     
-    fromFahrenheit(to, temp-input){
+    fromFahrenheit(to, temp-input);{
         // Converting Fahrenheit to Fahrenheit
         if (to == "Fah") {
             return temp-input;
@@ -28,7 +29,8 @@ function Conversion () {
         if (to == "Rea") {
             return ( 4 / 9 ) * (temp-input - 32);
     }
-    fromReamur(to, temp-input){
+    }
+    fromReamur(to, temp-input);{
     
         if (to == "Rea") {
             // Converting Reamur to Reamur
