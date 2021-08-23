@@ -1,37 +1,49 @@
 // Setup Conversion
-const celciusInput = document.getElementById("celcius-in");
-const fahrenheitInput = document.getElementById("fahrenheit-in");
-const kelvinInput = document.getElementById("kelvin-in");
-const celciusOutput = document.getElementById("celcius-out");
-const fahrenheitOutput = document.getElementById("fahrenheit-out");
-const kelvinOutput = document.getElementById("kelvin-out");
+function Conversion () {
+    fromCelcius(to, temp-input){
+        // Converting Celcius to Celcius
+        if (to == "Cel") {
+            return temp-input;
+        } 
+        // Converting Celcius to Fahrenheit
+        if (to == "Fah") {
+            return ( 9 / 5 ) * (temp-input + 32);
+        }
+        // Converting Celcius to Reamur
+        if (to == "Rea") {
+            return ( 4 / 5 ) * (temp-input +32);
+        }
+    }
+    
+    fromFahrenheit(to, temp-input){
+        // Converting Fahrenheit to Fahrenheit
+        if (to == "Fah") {
+            return temp-input;
+        }
+        // Converting Fahrenheit to Celcius
+        if (to == "Cel") {
+            return ( 5 / 9 ) * (temp-input + 32);
+        }
+        // Converting Fahrenheit to Reamur
+        if (to == "Rea") {
+            return ( 4 / 9 ) * (temp-input - 32);
+    }
+    fromReamur(to, temp-input){
+    
+        if (to == "Rea") {
+            // Converting Reamur to Reamur
+            return temp-input;
+        }
+        // Converting Reamur to Celcius
+        if (to == "Cel") {
+            return ( 5 / 4 ) * (temp-input);
+        }
+        // Converting Reamur to Fahrenheit
+        if (to == "Fah") {
+            return ( 9 / 4 ) * (temp-input);
+        }
+    }
+}
 
-console.log(celciusInput);
-console.log(fahrenheitInput);
-console.log(kelvinInput);
-console.log(celciusOutput);
-console.log(fahrenheitOutput);
-console.log(kelvinOutput);
 
-// Converting Celcius to Celcius
-
-// Converting Celcius to Fahrenheit
-
-// Converting Celcius to Kelvin
-
-
-
-
-// Converting Fahrenheit to Celcius
-
-// Converting Fahrenheit to Fahrenheit
-
-// Converting Fahrenheit to Kelvin
-
-
-
-// Converting Kelvin to Celcius
-
-// Converting Kelvin to Fahrenheit
-
-// Converting Kelvin to Kelvin
+module.exports = Conversion;
