@@ -2,11 +2,14 @@ function changeBackground() {
     document.body.style.backgroundColor = document.getElementById("color").value;
 }
 
-function select () {
-    document.getElementById('from').value = "";
-    document.getElementById('to').value = "";
+const select = () => {
+    document.getElementById('.selects').value = "";
+    document.getElementById('.selects').value = "";
 }
-
+// const Select = () => {
+//     $(".selects").val() = "";
+//     $(".selects").val() = "";
+// }
 const conv = () => {
     if (document.getElementById("from").value == "Cel") {
         const res = conv.fromCelcius(
@@ -31,3 +34,10 @@ const conv = () => {
     }
 }
 
+// const Convert = () => {
+//     const res = Conversion($(".fromNumber").val(),
+//     $(".toResult").val(),
+//     parseInt($("temp-input").val())
+//     );
+//     $("res-output").html(res);
+// }
