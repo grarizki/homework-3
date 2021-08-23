@@ -8,11 +8,11 @@
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="/style/style.css">
 
-    <link rel="shortcut icon" href="/assets/G.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/" type="image/x-icon">
     <title>Homework 3</title>
 <!-- Functions Javascript -->
-    <script src="/conversion.js"></script>
-    <script src="/cgbg.js"></script>
+<script src="/conversion.js"></script>
+<script src="/index.js"></script>
 </head>
 <body style="background-color : whitesmoke">
     <main>
@@ -20,27 +20,27 @@
         <header>
             <h1 class="title">Temperature Converter</h1>
         </header>
-
+ 
         <!-- start Selects Temperature Scales -->
         <div class="selects">
-        <select class="fromNumber" id="from" onchange="select()">
-            <option value="Cel" id="celcius-in">Celcius</option>
-            <option value="Fah" id="fahrenheit-in">Fahrenheit</option>
-            <option value="Kel" id="kelvin-in">Kelvin</option>
+            <select class="fromNumber" id="from" onchange="select()">
+                <option value="Cel">Celcius</option>
+                <option value="Fah">Fahrenheit</option>
+                <option value="Rea">Reamur</option>
         </select>
         <p> to </p>
         <select class="toResult" id="to" onchange="select()">
-            <option value="Cel" id="celcius-out">Celcius</option>
-            <option value="Fah" id="fahrenheit-out">Fahrenheit</option>
-            <option value="Kel" id="kelvin-out">Kelvin</option>
+            <option value="Cel">Celcius</option>
+            <option value="Fah">Fahrenheit</option>
+            <option value="Rea">Reamur</option>
         </select>
         </div>
         <!-- end Selects Temperature Scales -->
 
         <!-- start Input for number and result -->
         <div class="inputs">
-        <input type="number" name="initial temp" id="temp-input" class="input" placeholder="insert number here">
-        <input type="number" name="result temp" id="res-output" class="input" placeholder="result is here">
+        <input type="number" name="initial temp" id="temp-input" class="input" placeholder="insert number here" onkeypress="validate(event)" onkeyup="Convert()"/>
+        <p name="result temp" id="res-output" class="input" placeholder="result is here" disabled></p>
         </div>
         <!-- end Input for number and result -->
 
@@ -52,5 +52,6 @@
         <!-- end change background color -->
     </main>
 </div>
+
 </body>
 </html>
