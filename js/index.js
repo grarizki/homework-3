@@ -2,9 +2,10 @@ function changeBackground() {
     document.body.style.backgroundColor = document.getElementById("color").value;
 }
 
+// use temp-input and res-output instead of .selects for select function
 const select = () => {
-    document.getElementById('.selects').value = "";
-    document.getElementById('.selects').value = "";
+    document.getElementById('temp-input').value = "";
+    document.getElementById('res-output').value = "";
 }
 // const Select = () => {
 //     $(".selects").val() = "";
