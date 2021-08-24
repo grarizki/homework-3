@@ -48,6 +48,6 @@ class Conversion {
         }
     }
 }
-
+// pake switch case untuk mengurangi bentuk perulangan.
 
 module.exports = Conversion;
